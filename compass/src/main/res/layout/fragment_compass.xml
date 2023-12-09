@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rahmadev.hamba.compass.CompassFragment">
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:drawablePadding="16dp"
+        app:drawableStartCompat="@drawable/ic_my_location"
+        app:drawableTint="?attr/colorOnBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Kecamatan Wonosobo" />
+
+    <RelativeLayout
+        android:id="@+id/view_compass"
+        android:layout_width="232dp"
+        android:layout_height="232dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/compass"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_compassface" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/qibla_pointer"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_compass_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sotw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:gravity="center"
+        android:textColor="?attr/colorSecondary"
+        app:layout_constraintTop_toBottomOf="@id/view_compass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="NE 90"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_graph"
+        android:title="@string/home"
+        android:icon="@drawable/menu_home"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/quran_graph"
+        android:title="@string/quran"
+        android:icon="@drawable/menu_quran"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/compass_graph"
+        android:title="@string/mecca"
+        android:icon="@drawable/menu_compass"
+        android:enabled="true" />
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="24dp"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_subuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subuh"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:drawableBottom="@drawable/ic_subuh"
+        android:drawablePadding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_dzuhur"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_subuh_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintTop_toTopOf="@id/tv_asr_time"
+        app:layout_constraintStart_toStartOf="@id/tv_subuh"
+        app:layout_constraintEnd_toEndOf="@id/tv_subuh"
+        tools:text="09.00" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_dzuhur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dzuhur"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:drawableBottom="@drawable/ic_dzuhur"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_subuh"
+        app:layout_constraintEnd_toStartOf="@id/tv_asr"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_dzuhur_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintTop_toTopOf="@id/tv_asr_time"
+        app:layout_constraintStart_toStartOf="@id/tv_dzuhur"
+        app:layout_constraintEnd_toEndOf="@id/tv_dzuhur"
+        tools:text="09.00" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_asr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asr"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:drawableBottom="@drawable/ic_ashar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_dzuhur"
+        app:layout_constraintEnd_toStartOf="@id/tv_maghrib"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_asr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintTop_toBottomOf="@id/tv_asr"
+        app:layout_constraintStart_toStartOf="@id/tv_asr"
+        app:layout_constraintEnd_toEndOf="@id/tv_asr"
+        tools:text="09.00" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maghrib"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:drawableBottom="@drawable/ic_maghrib"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_asr"
+        app:layout_constraintEnd_toStartOf="@id/tv_isya"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_maghrib_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintTop_toTopOf="@id/tv_asr_time"
+        app:layout_constraintStart_toStartOf="@id/tv_maghrib"
+        app:layout_constraintEnd_toEndOf="@id/tv_maghrib"
+        tools:text="09.00" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_isya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isya"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:drawableBottom="@drawable/ic_isya"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_maghrib"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_isya_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintTop_toTopOf="@id/tv_asr_time"
+        app:layout_constraintStart_toStartOf="@id/tv_isya"
+        app:layout_constraintEnd_toEndOf="@id/tv_isya"
+        tools:text="09.00" />
+</androidx.constraintlayout.widget.ConstraintLayout>

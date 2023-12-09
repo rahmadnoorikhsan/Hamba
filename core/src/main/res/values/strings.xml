@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hamba</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="hadith">Hadits</string>
+    <string name="hadith_translate">%1$s (HR. Bukhari)</string>
+    <string name="number">Nomor</string>
+    <string name="mecca">Kiblat</string>
+    <string name="doa">Doa-Doa</string>
+    <string name="number_doa">%1$s.</string>
+    <string name="doa_translate">\"%1$s\"</string>
+    <string name="surah_type">%1$s • %2$s</string>
+</resources>
