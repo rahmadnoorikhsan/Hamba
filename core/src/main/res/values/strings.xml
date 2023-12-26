@@ -7,6 +7,7 @@
     <string name="number">Nomor</string>
     <string name="mecca">Kiblat</string>
     <string name="doa">Doa-Doa</string>
+    <string name="adzan">Adzan</string>
     <string name="number_doa">%1$s.</string>
     <string name="doa_translate">\"%1$s\"</string>
     <string name="surah_type">%1$s • %2$s</string>

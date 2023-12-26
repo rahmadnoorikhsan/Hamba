@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_homeFragment_to_doaFragment"
             app:destination="@id/doaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_adzanFragment"
+            app:destination="@id/adzanFragment" />
     </fragment>
     <fragment
         android:id="@+id/hadithFragment"
@@ -23,4 +26,8 @@
         android:id="@+id/doaFragment"
         android:name="com.rahmadev.hamba.doa.DoaFragment"
         android:label="DoaFragment" />
+    <fragment
+        android:id="@+id/adzanFragment"
+        android:name="com.rahmadev.hamba.adzan.AdzanFragment"
+        android:label="AdzanFragment" />
 </navigation>

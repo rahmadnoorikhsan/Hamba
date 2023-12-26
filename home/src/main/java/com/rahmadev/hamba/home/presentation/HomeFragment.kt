@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
     private val viewModel by viewModels<HomeViewModel>()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?,
     ): View? {
         _binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
         return binding?.root
@@ -160,11 +160,8 @@ class HomeFragment : Fragment() {
 
     private fun navigateToAdzan() {
         binding?.cardAdzan?.root?.setOnClickListener {
-            Toast.makeText(
-                requireActivity(),
-                "Fitur ini sedang dalam tahap pengembangan",
-                Toast.LENGTH_SHORT
-            ).show()
+            val action = HomeFragmentDirections.actionHomeFragmentToAdzanFragment()
+            findNavController().navigate(action)
         }
     }
 

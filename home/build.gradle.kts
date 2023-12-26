@@ -44,6 +44,7 @@ dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.hadith))
     implementation(project(Modules.doa))
+    implementation(project(Modules.adzan))
 
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.appCompat)

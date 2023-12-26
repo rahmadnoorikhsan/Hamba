@@ -5,4 +5,5 @@ object Modules {
     const val hadith = ":hadith"
     const val quran = ":quran"
     const val doa = ":doa"
+    const val adzan = ":adzan"
 }
